@@ -140,6 +140,7 @@ export default class AddProduct extends Component {
               imagenFile:[],
               c1:[],
               boolImages:false,
+              
           })
           }
         
