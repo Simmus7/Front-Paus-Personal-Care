@@ -127,9 +127,25 @@ export default class AddProduct extends Component {
           }
       
         axios.post('http://localhost:5000/products/add', product)
-          .then(res => Swal.fire({
+          .then(res => {
+            Swal.fire({
             title: res.data
-        }));
+          })
+          if(res.data == "Product added!"){
+            this.setState({
+              productname : '',
+              description : '',
+              price : 0,  
+              images:'',
+              imagenFile:[],
+              c1:[],
+              boolImages:false,
+          })
+          }
+        
+        }
+        );
+        
         
       }
 
