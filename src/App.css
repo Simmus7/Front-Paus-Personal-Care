@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .home,
+  .aboutus,
+  .products,
+  .contact {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  
+  .aboutus {
+    background-image: url('images/SobreNosotros.PNG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+  }
+
+  .misionvision{
+    background: rgb(216, 224, 238);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    border: 15px;
+  }
+
+  .linea {
+    border-top: 5px solid black;
+    height: 10px;
+    max-width: 2000px;
+    padding: 0;
+    margin: 0px auto 0 auto;
+  }
+
+  .products {
+    background-image: url('images/Imagenes-04.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(241, 246, 255);
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+  }
+  
+  .contact {
+    background-image: url('images/imagen4.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+  }

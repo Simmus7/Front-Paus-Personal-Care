@@ -1,0 +1,18 @@
+.header {
+    background: rgb(241, 246, 255);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    z-index: 999;
+  }
+
+  .logo-image img {
+    max-height: 210px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+  }
