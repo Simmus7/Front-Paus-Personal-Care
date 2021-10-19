@@ -126,7 +126,7 @@ export default class AddProduct extends Component {
             images : this.state.images
           }
       
-        axios.post('http://localhost:5000/products/add', product)
+        axios.post('https://backend-paus-personal-care.herokuapp.com/products/add', product)
           .then(res => {
             Swal.fire({
             title: res.data

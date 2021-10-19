@@ -16,7 +16,7 @@ export default class Products extends Component {
   }
 
   componentDidMount () {
-    axios.get('http://localhost:5000/products/get/').then(
+    axios.get('https://backend-paus-personal-care.herokuapp.com/products/get/').then(
       response => {
         this.setState({
           products: response.data
