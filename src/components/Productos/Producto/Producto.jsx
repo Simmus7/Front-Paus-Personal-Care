@@ -1,10 +1,15 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, Typography} from '@material-ui/core'
+import { Card, CardMedia, CardContent, CardActions, Typography, IconButton} from '@material-ui/core'
 import useStyles from './styles';
+import { SearchOutlined, ShoppingCartOutlined} from "@material-ui/icons";
+import { Link } from 'react-router-dom';
+import Details from '../../pages/Details'
+
 
 const Producto = ( {producto} ) => {
+    
     const clases = useStyles();
-    const urls= producto.productImage;
+    const urls = producto.productImage;
     return (
         <Card className={clases.root} >
             <CardMedia className={clases.media} image={urls[0]} title={producto.productname} />
@@ -21,9 +26,20 @@ const Producto = ( {producto} ) => {
                     {producto.description}    
                 </Typography>    
             </CardContent>
+            
+            <CardActions disableSpacing className={clases.cardActions}>
+                <IconButton component = {Link} to={'/details/'+producto._id}>                    
+                    <SearchOutlined/>
+                </IconButton>
+                <IconButton>
+                    <ShoppingCartOutlined />
+                </IconButton>
+            </CardActions>
+            
 
         </Card>
     )
 }
 
 export default Producto
+
