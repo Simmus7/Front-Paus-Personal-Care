@@ -74,13 +74,14 @@ const Button = styled.button`
 `;
 
 const Detalles = ( {product} ) => {
-       
+
     const urls= product.productImage;
+    console.log(urls[0]);
     return (
         <Container>
             <Wrapper>
                 <ImgContainer>
-                    <Image image={urls[0]} title={product.productname} />
+                    <Image src={product.productImage[0]} alt={product.productname} />
                 </ImgContainer>
                 <InfoContainer>
                     <Title>{product.productname}</Title>
