@@ -74,7 +74,7 @@ const Button = styled.button`
 `;
 
 const Detalles = ( {product} ) => {
-
+    //Agregue al componente Image la propiedad src, con image no funciona
     const urls= product.productImage;
     console.log(urls[0]);
     return (

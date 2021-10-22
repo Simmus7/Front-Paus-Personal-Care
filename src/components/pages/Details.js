@@ -53,6 +53,8 @@ export default class Details extends Component {
 }
 
   render () {
+    //Lo que se hizo aca fue que si el productToShow no existe va al else
+    // y cuando carga el dato, va a la pagina detalles
     if(this.state.productToShow != null ){
       return(
           <Detalles product = {this.state.productToShow} />
