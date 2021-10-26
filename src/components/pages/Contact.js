@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import '../../App.css';
 
-export default function Contact() {
-  return <h1 className='contact'>CONTÁCTENOS</h1>;
+function Contact() {
+
+  /*useEffect(() => {
+    window.location.href = "https://www.whatsapp.com/";
+  }, []);*/
+
+  return (
+    <h1 className='contact'>CONTÁCTENOS</h1>
+  );
 }
+
+export default Contact;

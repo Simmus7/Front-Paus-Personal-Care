@@ -1,6 +1,7 @@
 import { Add, Remove } from "@material-ui/icons";
 import axios from "axios";
 import styled from "styled-components";
+import React, {useEffect} from 'react'
 
 const Container = styled.div``;
 
@@ -75,16 +76,29 @@ const Button = styled.button`
 
 const Detalles = ( {product} ) => {
     //Agregue al componente Image la propiedad src, con image no funciona
-    const urls= product.productImage;
-    console.log(urls[0]);
+    // const urls= product.productImage;
+
+    const scrollToElement = (elementId = 'product-image') => {
+      const element = document.getElementById(elementId)
+
+      if(element){
+        element.scrollIntoView()
+      }
+    }
+
+    useEffect(() => {
+      window.scrollTo(0,0)
+     // scrollToElement('product-container')
+    },[])
+
     return (
-        <Container>
+        <Container id='product-container'>
             <Wrapper>
                 <ImgContainer>
-                    <Image src={product.productImage[0]} alt={product.productname} />
+                    <Image id='product-image' src={product.productImage[0]} alt={product.productname} />
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>{product.productname}</Title>
+                    <Title id='product-title'>{product.productname}</Title>
                     <Desc> {product.description}</Desc>
                     <Price>${product.price}</Price>
                     <AddContainer>

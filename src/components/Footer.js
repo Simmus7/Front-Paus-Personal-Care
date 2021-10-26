@@ -39,10 +39,10 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Redes Sociales</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Twitter</Link>
-            <Link to='/'>LinkedIn</Link>
+            <Link to={{ pathname: "https://instagram.com" }} target='_blank'>Instagram</Link>
+            <Link to={{ pathname: "https://facebook.com" }} target='_blank'>Facebook</Link>
+            <Link to={{ pathname: "https://twitter.com" }} target='_blank'>Twitter</Link>
+            <Link to={{ pathname: "https://linkedin.com" }} target='_blank'>LinkedIn</Link>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ function Footer() {
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to={{ pathname: "https://facebook.com" }}
               target='_blank'
               aria-label='Facebook'
             >
@@ -65,7 +65,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to={{ pathname: "https://instagram.com" }}
               target='_blank'
               aria-label='Instagram'
             >
@@ -73,7 +73,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to={{ pathname: "https://twitter.com" }}
               target='_blank'
               aria-label='Twitter'
             >
@@ -81,7 +81,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to={{ pathname: "https://linkedin.com" }}
               target='_blank'
               aria-label='LinkedIn'
             >
