@@ -6,7 +6,6 @@ import './App.css';
 import Home from './components/pages/Home';
 import Products from './components/pages/Products';
 import Aboutus from './components/pages/Aboutus';
-import Contact from './components/pages/Contact';
 import Footer from './components/Footer';
 import AddProduct from './components/pages/AddProduct';
 import Details from './components/pages/Details';
@@ -21,7 +20,6 @@ function App() {
         <Route path='/products' exact component = {Products} />
         <Route path='/details/:id' exact component = {Details} />
         <Route path='/aboutus' exact component = {Aboutus} />
-        <Route path='/contact' exact component = {Contact} />
         <Route path='/addproduct' exact component = {AddProduct} />
       </Switch>
       <Footer/>

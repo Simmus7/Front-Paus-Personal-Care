@@ -12,31 +12,20 @@ const Producto = ( {producto} ) => {
     const urls = producto.productImage;
     return (
         <Card className={clases.root} >
-            <CardMedia className={clases.media} image={urls[0]} title={producto.productname} />
+            <CardMedia className={clases.media} image={urls[0]} title={producto.productname} component = {Link} to={'/details/'+producto._id}/>
             <CardContent>
                 <div className={clases.cardContent}>
                     <Typography variant="h5" gutterBottom>
                         {producto.productname}
                     </Typography>
                     <Typography variant="h5">
-                        {producto.price}
+                        ${producto.price}
                     </Typography>
                 </div>
                 <Typography variant="body2" color="textSecondary">
                     {producto.description}    
                 </Typography>    
             </CardContent>
-            
-            <CardActions disableSpacing className={clases.cardActions}>
-                <IconButton component = {Link} to={'/details/'+producto._id}>                    
-                    <SearchOutlined/>
-                </IconButton>
-                <IconButton>
-                    <ShoppingCartOutlined />
-                </IconButton>
-            </CardActions>
-            
-
         </Card>
     )
 }

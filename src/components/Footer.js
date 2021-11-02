@@ -31,7 +31,7 @@ function Footer() {
             <h2>Sobre nosotros</h2>
             <Link to='/aboutus'>Quiénes somos</Link>
             <Link to='/'>Reseñas</Link>
-            <Link to='/contact'>Contáctenos</Link>
+            <Link to={{ pathname: "https://web.whatsapp.com/send?phone=573148239617&text=" }} target='_blank'>Contáctenos</Link>
             <Link to='/'>Terminos de servicio</Link>
           </div>
           <div>
@@ -42,7 +42,7 @@ function Footer() {
             <Link to={{ pathname: "https://instagram.com" }} target='_blank'>Instagram</Link>
             <Link to={{ pathname: "https://facebook.com" }} target='_blank'>Facebook</Link>
             <Link to={{ pathname: "https://twitter.com" }} target='_blank'>Twitter</Link>
-            <Link to={{ pathname: "https://linkedin.com" }} target='_blank'>LinkedIn</Link>
+            <Link to={{ pathname: "https://web.whatsapp.com/send?phone=573148239617&text=" }} target='_blank'>WhatsApp</Link>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              <img src={process.env.PUBLIC_URL + '/Logo P-03.png'} alt="Logo" />
+              <img src={process.env.PUBLIC_URL + '/images/Logo P-03.png'} alt="Logo" />
             </Link>
           </div>
           <small class='website-rights'>PAU'S PERSONAL CARE © 2021</small>
@@ -81,11 +81,11 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to={{ pathname: "https://linkedin.com" }}
+              to={{ pathname: "https://web.whatsapp.com/send?phone=573148239617&text=" }}
               target='_blank'
-              aria-label='LinkedIn'
+              aria-label='WhatsApp'
             >
-              <i class='fab fa-linkedin' />
+              <i class='fab fa-whatsapp' />
             </Link>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Productos = (  {products} ) => {
     const clases = useStyles();
     return (
         <main className={clases.content}>
-            <SearchBar />
+            <SearchBar placeholder="Buscar"/>
             <div className={clases.toolbar}/>
             <Grid container justify="center" spacing={4}>
                 {products.map((product) => (

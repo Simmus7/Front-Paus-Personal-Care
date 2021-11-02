@@ -37,7 +37,8 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/contact'
+                to={{ pathname: "https://web.whatsapp.com/send?phone=573148239617&text=" }}
+                target='_blank'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
